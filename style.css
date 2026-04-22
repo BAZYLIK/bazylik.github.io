@@ -11,6 +11,7 @@
   --acc-bg: #0d0d0d;
   --acc-fg: #f2f0eb;
   --border: 1px solid #d8d5cf;
+  --green:  #16a34a; /* ← changer ici pour revenir en arrière : remplacer par var(--ink) */
 }
 
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
   --acc-bg: #f0ede6;
   --acc-fg: #0d0d0d;
   --border: 1px solid #1e1e1e;
+  --green:  #22c55e;
 }
 
 html { scroll-behavior: smooth; }
@@ -138,7 +140,7 @@ a { color: inherit; text-decoration: none; }
 .dot {
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: #22c55e;
+  background: var(--green);
   animation: blink 2.5s infinite;
 }
 
@@ -252,7 +254,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--mid);
+  color: var(--green);
 }
 
 /* ===== WORK ROWS ===== */
@@ -291,7 +293,7 @@ a { color: inherit; text-decoration: none; }
   font-family: 'Syne', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--mid);
+  color: var(--green);
   transition: color 0.25s;
 }
 

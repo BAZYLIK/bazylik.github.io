@@ -20,7 +20,7 @@
 .proj-kicker {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--mid);
+  color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -28,7 +28,7 @@
 .proj-index {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--mid);
+  color: var(--green);
   font-family: 'Syne', sans-serif;
   letter-spacing: 0.06em;
 }
@@ -74,7 +74,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--mid);
+  color: var(--green);
 }
 
 .pm-value {
@@ -200,7 +200,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--mid);
+  color: var(--green);
   margin-bottom: 12px;
 }
 
