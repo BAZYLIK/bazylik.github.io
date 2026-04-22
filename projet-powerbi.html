@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableaux de bord RH Power BI — Reda Rouibah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <header id="header">
+    <a class="logo" href="index.html">← Reda Rouibah</a>
+    <nav>
+      <a href="index.html#travaux">Travaux</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" aria-label="Thème"></button>
+  </header>
+
+  <main>
+
+    <section class="proj-hero">
+      <div class="proj-hero-top">
+        <span class="proj-kicker">Stage · Data & BI · ilem Group</span>
+        <span class="proj-index">03 / 05</span>
+      </div>
+      <h1 class="proj-title">Tableaux<br/>de bord RH<br/>Power BI</h1>
+      <div class="proj-meta-strip">
+        <div class="proj-meta-item">
+          <span class="pm-label">Rôle</span>
+          <span class="pm-value">Data analyst / BI junior</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Période</span>
+          <span class="pm-value">Avril — Juin 2025</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Durée</span>
+          <span class="pm-value">3 mois</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Contexte</span>
+          <span class="pm-value">ilem Group</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-stack-bar">
+      <span>Power BI</span>
+      <span>DAX</span>
+      <span>Power Query</span>
+      <span>Modélisation données</span>
+      <span>KPI</span>
+    </div>
+
+    <div class="proj-body">
+
+      <section class="proj-section reveal">
+        <h2>Contexte</h2>
+        <p>
+          Stage de trois mois chez ilem Group, une ESN. La mission : structurer et visualiser
+          des données RH dispersées pour les rendre lisibles par la direction — absences,
+          congés, heures supplémentaires et intercontrats regroupés dans des rapports
+          interactifs sous Power BI.
+        </p>
+        <p>
+          L'enjeu n'était pas la complexité des données elles-mêmes, mais leur mise en forme :
+          produire des vues claires, fiables et directement utilisables pour le pilotage.
+        </p>
+      </section>
+
+      <section class="proj-section reveal">
+        <h2>Ce qui a été produit</h2>
+        <ul class="proj-list">
+          <li>Recueil des besoins auprès de la direction RH</li>
+          <li>Modélisation des sources — absences, congés, heures sup, intercontrats</li>
+          <li>Nettoyage et transformation des données avec Power Query</li>
+          <li>Création de rapports interactifs avec filtres et slicers</li>
+          <li>Construction de mesures et KPIs en DAX</li>
+        </ul>
+      </section>
+
+      <section class="proj-section proj-highlight reveal">
+        <span class="highlight-label">Mesure DAX</span>
+        <h2>Le calcul des heures supplémentaires avec coefficient</h2>
+        <p>
+          La mesure la plus intéressante du projet. Certains collaborateurs avaient un
+          coefficient appliqué sur leurs heures supplémentaires — ce qui signifiait que
+          le calcul ne pouvait pas être uniforme : il fallait identifier dynamiquement
+          si la personne concernée faisait partie du groupe soumis à coefficient,
+          puis appliquer la bonne règle de calcul.
+        </p>
+        <p>
+          En DAX, ça s'est traduit par une mesure conditionnelle combinant
+          <code>CALCULATE</code>, <code>RELATED</code> et une logique de filtre
+          sur la table des collaborateurs — pour que le résultat soit juste
+          quel que soit le contexte de filtrage du rapport.
+        </p>
+      </section>
+
+      <section class="proj-section reveal">
+        <span class="highlight-label">Ce qu'on retient</span>
+        <h2>Rendre une donnée exploitable</h2>
+        <p>
+          Ce stage m'a montré que la valeur d'un rapport BI tient rarement
+          à la sophistication des calculs. Elle tient à la clarté de la lecture :
+          est-ce que la personne qui ouvre le rapport comprend immédiatement ce qu'elle voit
+          et peut agir dessus ?
+        </p>
+        <p>
+          La mesure sur les heures sup avec coefficient était un bon cas concret :
+          une règle métier précise, un résultat qui doit être juste dans tous les contextes,
+          et une présentation qui ne doit pas demander d'explication.
+        </p>
+      </section>
+
+    </div>
+
+    <nav class="proj-nav">
+      <a href="projet-gainr.html" class="proj-nav-back">← Gainr</a>
+      <a href="projet-ecommerce.html" class="proj-nav-next">
+        <span class="pn-label">Projet suivant</span>
+        <span class="pn-title">Plateforme e-commerce →</span>
+      </a>
+    </nav>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

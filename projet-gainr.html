@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gainr — Reda Rouibah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <header id="header">
+    <a class="logo" href="index.html">← Reda Rouibah</a>
+    <nav>
+      <a href="index.html#travaux">Travaux</a>
+      <a href="index.html#parcours">Parcours</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" aria-label="Thème"></button>
+  </header>
+
+  <main>
+
+    <section class="proj-hero">
+      <div class="proj-hero-top">
+        <span class="proj-kicker">Projet personnel · SaaS · En cours</span>
+        <span class="proj-index">02 / 05</span>
+      </div>
+      <h1 class="proj-title">Gainr</h1>
+      <div class="proj-meta-strip">
+        <div class="proj-meta-item">
+          <span class="pm-label">Rôle</span>
+          <span class="pm-value">Fondateur · Développeur solo</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Type</span>
+          <span class="pm-value">SaaS · Application web</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Statut</span>
+          <span class="pm-value pm-live"><span class="dot"></span>En ligne</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="pm-label">Lien</span>
+          <a class="pm-value pm-link" href="https://mygainr.vercel.app" target="_blank" rel="noopener">mygainr.vercel.app ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="proj-stack-bar">
+      <span>Next.js</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>IA générative</span>
+      <span>Vercel</span>
+    </div>
+
+    <div class="proj-body">
+
+      <section class="proj-section reveal">
+        <h2>Le projet</h2>
+        <p>
+          Gainr est une application SaaS destinée aux pratiquants de musculation,
+          débutants comme confirmés. L'idée centrale : générer un programme d'entraînement
+          sur mesure via IA, adapté au profil, aux objectifs et au niveau de l'utilisateur —
+          sans passer par un coach ou des templates génériques.
+        </p>
+        <p>
+          L'application couvre aussi le suivi dans le temps : performances aux exercices,
+          évolution du poids et gestion de la diète. Tout ce qu'un pratiquant sérieux
+          veut centraliser en un seul endroit.
+        </p>
+      </section>
+
+      <section class="proj-section reveal">
+        <h2>Ce que l'app fait</h2>
+        <ul class="proj-list">
+          <li>Génération de programme d'entraînement sur mesure par IA</li>
+          <li>Adaptation au niveau, aux objectifs et aux équipements disponibles</li>
+          <li>Suivi des performances par exercice et par séance</li>
+          <li>Suivi de l'évolution du poids dans le temps</li>
+          <li>Gestion de la diète et des apports</li>
+        </ul>
+      </section>
+
+      <section class="proj-section proj-highlight reveal">
+        <span class="highlight-label">Double défi</span>
+        <h2>UX pensée pour la salle + intégration IA</h2>
+        <p>
+          Le premier défi : concevoir une interface utilisable dans un contexte particulier —
+          quelqu'un entre deux séries, les mains chargées, qui a besoin d'accéder
+          à l'info vite et de logger une perf en quelques secondes.
+          Une UX normale ne suffit pas : chaque interaction doit être évidente,
+          chaque écran doit répondre à une intention claire.
+        </p>
+        <p>
+          Le deuxième défi : faire en sorte que la génération IA produise des programmes
+          réellement adaptés et cohérents — pas juste une réponse générique habillée
+          en programme. Ça demande un travail de prompt engineering et de structuration
+          de la sortie pour que le résultat soit exploitable directement dans l'app.
+        </p>
+      </section>
+
+      <section class="proj-section reveal">
+        <span class="highlight-label">Ce qu'on retient</span>
+        <h2>Construire vite sans bâcler</h2>
+        <p>
+          Ce projet avance parce que les décisions sont prises rapidement et le scope
+          est tenu. Sur un projet solo, la tentation est soit de sur-concevoir
+          avant de coder, soit de coder sans réfléchir à la structure.
+          Trouver l'équilibre — poser les bonnes fondations Next.js, avancer feature par feature —
+          c'est ce qui fait que le projet tient dans le temps.
+        </p>
+        <p>
+          C'est aussi le projet qui me permet d'appliquer des choses que je ne touche pas
+          forcément en cours ou en alternance : product thinking, UX design,
+          intégration d'IA dans un vrai contexte produit.
+        </p>
+      </section>
+
+    </div>
+
+    <nav class="proj-nav">
+      <a href="projet-notesdefrais.html" class="proj-nav-back">← Module Notes de Frais</a>
+      <a href="projet-powerbi.html" class="proj-nav-next">
+        <span class="pn-label">Projet suivant</span>
+        <span class="pn-title">Tableaux de bord RH →</span>
+      </a>
+    </nav>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
