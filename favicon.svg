@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="#0d0d0d"/>
+  <!-- RR letters -->
+  <text x="7" y="46"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="38"
+    letter-spacing="-3"
+    fill="#f0ede6">RR</text>
+  <!-- Green accent line -->
+  <rect x="7" y="52" width="16" height="3" rx="1.5" fill="#16a34a"/>
+</svg>
