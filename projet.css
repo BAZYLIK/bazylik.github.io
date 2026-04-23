@@ -34,16 +34,20 @@
 }
 
 .proj-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   font-size: clamp(2.8rem, calc((100vw - 96px) / 8), 9rem);
-  line-height: 0.9;
+  line-height: 1.0;
   letter-spacing: -0.03em;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 32px 0;
+}
+
+.proj-title span {
+  display: block;
 }
 
 /* Bandes meta */
