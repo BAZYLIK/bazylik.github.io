@@ -31,3 +31,14 @@ const io = new IntersectionObserver(
   { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
 );
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Floating project nav — visible once past the stack bar
+const projNav = document.querySelector('.proj-nav');
+const stackBar = document.querySelector('.proj-stack-bar');
+if (projNav && stackBar) {
+  const onScroll = () => {
+    projNav.classList.toggle('visible', stackBar.getBoundingClientRect().bottom < 60);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}

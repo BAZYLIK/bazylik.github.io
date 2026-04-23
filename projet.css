@@ -222,36 +222,42 @@
 .proj-nav-next {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   pointer-events: auto;
-  writing-mode: vertical-lr;
-  padding: 20px 12px;
+  padding: 10px 14px;
   background: var(--bg);
   border: var(--border);
   border-radius: 8px;
-  opacity: 0.4;
-  transition: opacity 0.2s, color 0.2s;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
   text-decoration: none;
 }
 
-.proj-nav-back:hover,
-.proj-nav-next:hover { opacity: 1; }
+.proj-nav.visible .proj-nav-back,
+.proj-nav.visible .proj-nav-next { opacity: 0.45; }
+
+.proj-nav.visible .proj-nav-back:hover,
+.proj-nav.visible .proj-nav-next:hover { opacity: 1; }
 
 .proj-nav-back {
   left: 16px;
-  transform: translateY(-50%) rotate(180deg);
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--mid);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  transition: opacity 0.3s, color 0.2s;
 }
 
 .proj-nav-back:hover { color: var(--ink); }
 
 .proj-nav-next {
   right: 16px;
-  transform: translateY(-50%);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
 }
 
 .pn-label { display: none; }
