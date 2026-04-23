@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gainr - Reda Rouibah</title>
+  <title data-i18n="gainr-page-title">Gainr - Reda Rouibah</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +16,11 @@
   <header id="header">
     <a class="logo" href="index.html">← Reda Rouibah</a>
     <nav>
-      <a href="index.html#travaux">Travaux</a>
-      <a href="index.html#parcours">Parcours</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#travaux" data-i18n="nav-travaux">Travaux</a>
+      <a href="index.html#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="index.html#contact" data-i18n="nav-contact">Contact</a>
     </nav>
+    <button id="langBtn" aria-label="Langue"></button>
     <button id="themeBtn" aria-label="Thème"></button>
   </header>
 
@@ -27,25 +28,25 @@
 
     <section class="proj-hero">
       <div class="proj-hero-top">
-        <span class="proj-kicker">Projet personnel · SaaS · En cours</span>
+        <span class="proj-kicker" data-i18n="gainr-kicker">Projet personnel · SaaS · En cours</span>
         <span class="proj-index">02 / 05</span>
       </div>
       <h1 class="proj-title"><span>Gainr</span></h1>
       <div class="proj-meta-strip">
         <div class="proj-meta-item">
-          <span class="pm-label">Rôle</span>
-          <span class="pm-value">Fondateur · Développeur solo</span>
+          <span class="pm-label" data-i18n="pm-role">Rôle</span>
+          <span class="pm-value" data-i18n="gainr-meta-role">Fondateur · Développeur solo</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Type</span>
-          <span class="pm-value">SaaS · Application web</span>
+          <span class="pm-label" data-i18n="pm-type">Type</span>
+          <span class="pm-value" data-i18n="gainr-meta-type">SaaS · Application web</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Statut</span>
-          <span class="pm-value pm-live"><span class="dot"></span>En ligne</span>
+          <span class="pm-label" data-i18n="pm-statut">Statut</span>
+          <span class="pm-value pm-live"><span class="dot"></span><span data-i18n="gainr-meta-statut">En ligne</span></span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Lien</span>
+          <span class="pm-label" data-i18n="pm-lien">Lien</span>
           <a class="pm-value pm-link" href="https://mygainr.vercel.app" target="_blank" rel="noopener">mygainr.vercel.app ↗</a>
         </div>
       </div>
@@ -62,14 +63,14 @@
     <div class="proj-body">
 
       <section class="proj-section reveal">
-        <h2>Le projet</h2>
-        <p>
+        <h2 data-i18n="gainr-s1-h">Le projet</h2>
+        <p data-i18n="gainr-s1-p1">
           Gainr est une application SaaS destinée aux pratiquants de musculation,
           débutants comme confirmés. L'idée centrale : générer un programme d'entraînement
           sur mesure via IA, adapté au profil, aux objectifs et au niveau de l'utilisateur,
           sans passer par un coach ou des templates génériques.
         </p>
-        <p>
+        <p data-i18n="gainr-s1-p2">
           L'application couvre aussi le suivi dans le temps : performances aux exercices,
           évolution du poids et gestion de la diète. Tout ce qu'un pratiquant sérieux
           veut centraliser en un seul endroit.
@@ -77,27 +78,27 @@
       </section>
 
       <section class="proj-section reveal">
-        <h2>Ce que l'app fait</h2>
+        <h2 data-i18n="gainr-s2-h">Ce que l'app fait</h2>
         <ul class="proj-list">
-          <li>Génération de programme d'entraînement sur mesure par IA</li>
-          <li>Adaptation au niveau, aux objectifs et aux équipements disponibles</li>
-          <li>Suivi des performances par exercice et par séance</li>
-          <li>Suivi de l'évolution du poids dans le temps</li>
-          <li>Gestion de la diète et des apports</li>
+          <li data-i18n="gainr-s2-li1">Génération de programme d'entraînement sur mesure par IA</li>
+          <li data-i18n="gainr-s2-li2">Adaptation au niveau, aux objectifs et aux équipements disponibles</li>
+          <li data-i18n="gainr-s2-li3">Suivi des performances par exercice et par séance</li>
+          <li data-i18n="gainr-s2-li4">Suivi de l'évolution du poids dans le temps</li>
+          <li data-i18n="gainr-s2-li5">Gestion de la diète et des apports</li>
         </ul>
       </section>
 
       <section class="proj-section proj-highlight reveal">
-        <span class="highlight-label">Double défi</span>
-        <h2>UX pensée pour la salle + intégration IA</h2>
-        <p>
+        <span class="highlight-label" data-i18n="gainr-hl-label">Double défi</span>
+        <h2 data-i18n="gainr-s3-h">UX pensée pour la salle + intégration IA</h2>
+        <p data-i18n="gainr-s3-p1">
           Le premier défi : concevoir une interface utilisable dans un contexte particulier,
           quelqu'un entre deux séries, les mains chargées, qui a besoin d'accéder
           à l'info vite et de logger une perf en quelques secondes.
           Une UX normale ne suffit pas : chaque interaction doit être évidente,
           chaque écran doit répondre à une intention claire.
         </p>
-        <p>
+        <p data-i18n="gainr-s3-p2">
           Le deuxième défi : faire en sorte que la génération IA produise des programmes
           réellement adaptés et cohérents, pas juste une réponse générique habillée
           en programme. Ça demande un travail de prompt engineering et de structuration
@@ -106,16 +107,16 @@
       </section>
 
       <section class="proj-section reveal">
-        <span class="highlight-label">Ce qu'on retient</span>
-        <h2>Construire vite sans bâcler</h2>
-        <p>
+        <span class="highlight-label" data-i18n="gainr-s4-label">Ce qu'on retient</span>
+        <h2 data-i18n="gainr-s4-h">Construire vite sans bâcler</h2>
+        <p data-i18n="gainr-s4-p1">
           Ce projet avance parce que les décisions sont prises rapidement et le scope
           est tenu. Sur un projet solo, la tentation est soit de sur-concevoir
           avant de coder, soit de coder sans réfléchir à la structure.
           Trouver l'équilibre, poser les bonnes fondations Next.js, avancer feature par feature,
           c'est ce qui fait que le projet tient dans le temps.
         </p>
-        <p>
+        <p data-i18n="gainr-s4-p2">
           C'est aussi le projet qui me permet d'appliquer des choses que je ne touche pas
           forcément en cours ou en alternance : product thinking, UX design,
           intégration d'IA dans un vrai contexte produit.
@@ -125,10 +126,10 @@
     </div>
 
     <nav class="proj-nav">
-      <a href="projet-notesdefrais.html" class="proj-nav-back">← Module Notes de Frais</a>
+      <a href="projet-notesdefrais.html" class="proj-nav-back" data-i18n="gainr-nav-back">← Module Notes de Frais</a>
       <a href="projet-powerbi.html" class="proj-nav-next">
-        <span class="pn-label">Projet suivant</span>
-        <span class="pn-title">Tableaux de bord RH →</span>
+        <span class="pn-label" data-i18n="gainr-pn-label">Projet suivant</span>
+        <span class="pn-title" data-i18n="gainr-pn-title">Tableaux de bord RH →</span>
       </a>
     </nav>
 

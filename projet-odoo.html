@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Déploiement ERP Odoo - Reda Rouibah</title>
+  <title data-i18n="odoo-page-title">Déploiement ERP Odoo - Reda Rouibah</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +16,11 @@
   <header id="header">
     <a class="logo" href="index.html">← Reda Rouibah</a>
     <nav>
-      <a href="index.html#travaux">Travaux</a>
-      <a href="index.html#parcours">Parcours</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#travaux" data-i18n="nav-travaux">Travaux</a>
+      <a href="index.html#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="index.html#contact" data-i18n="nav-contact">Contact</a>
     </nav>
+    <button id="langBtn" aria-label="Langue"></button>
     <button id="themeBtn" aria-label="Thème"></button>
   </header>
 
@@ -27,25 +28,25 @@
 
     <section class="proj-hero">
       <div class="proj-hero-top">
-        <span class="proj-kicker">Projet universitaire · Intégration SI</span>
+        <span class="proj-kicker" data-i18n="odoo-kicker">Projet universitaire · Intégration SI</span>
         <span class="proj-index">05 / 05</span>
       </div>
       <h1 class="proj-title"><span>ERP Odoo</span><span>Restauration</span></h1>
       <div class="proj-meta-strip">
         <div class="proj-meta-item">
-          <span class="pm-label">Rôle</span>
-          <span class="pm-value">Intégration fonctionnelle & technique</span>
+          <span class="pm-label" data-i18n="pm-role">Rôle</span>
+          <span class="pm-value" data-i18n="odoo-meta-role">Intégration fonctionnelle & technique</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Équipe</span>
-          <span class="pm-value">4 personnes</span>
+          <span class="pm-label" data-i18n="pm-equipe">Équipe</span>
+          <span class="pm-value" data-i18n="odoo-meta-equipe">4 personnes</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Durée</span>
-          <span class="pm-value">2 mois</span>
+          <span class="pm-label" data-i18n="pm-duree">Durée</span>
+          <span class="pm-value" data-i18n="odoo-meta-duree">2 mois</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Contexte</span>
+          <span class="pm-label" data-i18n="pm-contexte">Contexte</span>
           <span class="pm-value">BUT IAMSI</span>
         </div>
       </div>
@@ -63,41 +64,41 @@
     <div class="proj-body">
 
       <section class="proj-section reveal">
-        <h2>Contexte</h2>
-        <p>
+        <h2 data-i18n="odoo-s1-h">Contexte</h2>
+        <p data-i18n="odoo-s1-p1">
           Projet universitaire réalisé en équipe de quatre, avec un client fictif jouant le rôle
           d'un restaurateur souhaitant digitaliser son activité. L'objectif : déployer et adapter
           un ERP Odoo pour couvrir les besoins concrets du restaurant, gestion du stock,
           suivi des commandes et automatisation de certains processus métier.
         </p>
-        <p>
+        <p data-i18n="odoo-s1-p2">
           Le cadre simulait une vraie relation client, avec des échanges réguliers pour recueillir
           les besoins, présenter les avancées et ajuster le périmètre en fonction des retours.
         </p>
       </section>
 
       <section class="proj-section reveal">
-        <h2>Ce qu'on a mis en place</h2>
+        <h2 data-i18n="odoo-s2-h">Ce qu'on a mis en place</h2>
         <ul class="proj-list">
-          <li>Recueil des besoins métier au fil des échanges avec le client fictif</li>
-          <li>Configuration des modules Odoo - stock, commandes, point de vente</li>
-          <li>Développements sur mesure pour coller au fonctionnement spécifique du restaurant</li>
-          <li>Ajustements progressifs dans une logique agile, sprint par sprint</li>
-          <li>Présentation des livrables et validation avec le client à chaque étape</li>
+          <li data-i18n="odoo-s2-li1">Recueil des besoins métier au fil des échanges avec le client fictif</li>
+          <li data-i18n="odoo-s2-li2">Configuration des modules Odoo - stock, commandes, point de vente</li>
+          <li data-i18n="odoo-s2-li3">Développements sur mesure pour coller au fonctionnement spécifique du restaurant</li>
+          <li data-i18n="odoo-s2-li4">Ajustements progressifs dans une logique agile, sprint par sprint</li>
+          <li data-i18n="odoo-s2-li5">Présentation des livrables et validation avec le client à chaque étape</li>
         </ul>
       </section>
 
       <section class="proj-section proj-highlight reveal">
-        <span class="highlight-label">Point technique</span>
-        <h2>Le développement sur mesure</h2>
-        <p>
+        <span class="highlight-label" data-i18n="odoo-hl-label">Point technique</span>
+        <h2 data-i18n="odoo-s3-h">Le développement sur mesure</h2>
+        <p data-i18n="odoo-s3-p1">
           La configuration standard d'Odoo couvre beaucoup de cas, mais pas tous.
           Pour ce restaurant, certains flux ne correspondaient pas exactement aux modules
           natifs : il fallait développer des adaptations spécifiques, en Python et XML,
           pour faire coller l'ERP au fonctionnement réel plutôt que d'imposer
           le fonctionnement de l'ERP au client.
         </p>
-        <p>
+        <p data-i18n="odoo-s3-p2">
           C'est là que la complexité était réelle : comprendre l'architecture interne d'Odoo,
           identifier les bons points d'extension, et ne pas casser les modules existants
           en personnalisant.
@@ -105,14 +106,14 @@
       </section>
 
       <section class="proj-section reveal">
-        <span class="highlight-label">Ce qu'on retient</span>
-        <h2>La relation client comme levier technique</h2>
-        <p>
+        <span class="highlight-label" data-i18n="odoo-s4-label">Ce qu'on retient</span>
+        <h2 data-i18n="odoo-s4-h">La relation client comme levier technique</h2>
+        <p data-i18n="odoo-s4-p1">
           Ce qui a rendu ce projet efficace, c'est la qualité des échanges avec le client fictif.
           Des retours clairs à chaque sprint ont évité de construire dans le vide, on savait
           rapidement si une fonctionnalité était comprise, utilisable, ou à retravailler.
         </p>
-        <p>
+        <p data-i18n="odoo-s4-p2">
           Ça m'a appris que bien intégrer un SI, c'est autant une question de communication
           que de technique. Un besoin mal compris produit une solution inutile,
           même si le code est propre.
@@ -122,10 +123,10 @@
     </div>
 
     <nav class="proj-nav">
-      <a href="projet-ecommerce.html" class="proj-nav-back">← Plateforme e-commerce</a>
+      <a href="projet-ecommerce.html" class="proj-nav-back" data-i18n="odoo-nav-back">← Plateforme e-commerce</a>
       <a href="index.html#travaux" class="proj-nav-next">
-        <span class="pn-label">Retour</span>
-        <span class="pn-title">Tous les travaux →</span>
+        <span class="pn-label" data-i18n="odoo-pn-label">Retour</span>
+        <span class="pn-title" data-i18n="odoo-pn-title">Tous les travaux →</span>
       </a>
     </nav>
 

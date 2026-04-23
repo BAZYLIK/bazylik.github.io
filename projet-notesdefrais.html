@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module ERP Notes de Frais - Reda Rouibah</title>
+  <title data-i18n="notes-page-title">Module ERP Notes de Frais - Reda Rouibah</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +16,11 @@
   <header id="header">
     <a class="logo" href="index.html">← Reda Rouibah</a>
     <nav>
-      <a href="index.html#travaux">Travaux</a>
-      <a href="index.html#parcours">Parcours</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#travaux" data-i18n="nav-travaux">Travaux</a>
+      <a href="index.html#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="index.html#contact" data-i18n="nav-contact">Contact</a>
     </nav>
+    <button id="langBtn" aria-label="Langue"></button>
     <button id="themeBtn" aria-label="Thème"></button>
   </header>
 
@@ -27,25 +28,25 @@
 
     <section class="proj-hero">
       <div class="proj-hero-top">
-        <span class="proj-kicker">Alternance · Développement SI · ilem Group</span>
+        <span class="proj-kicker" data-i18n="notes-kicker">Alternance · Développement SI · ilem Group</span>
         <span class="proj-index">01 / 05</span>
       </div>
       <h1 class="proj-title"><span>Module ERP</span><span>Notes de Frais</span></h1>
       <div class="proj-meta-strip">
         <div class="proj-meta-item">
-          <span class="pm-label">Rôle</span>
-          <span class="pm-value">Développeur</span>
+          <span class="pm-label" data-i18n="pm-role">Rôle</span>
+          <span class="pm-value" data-i18n="notes-meta-role">Développeur</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Durée</span>
-          <span class="pm-value">1 an</span>
+          <span class="pm-label" data-i18n="pm-duree">Durée</span>
+          <span class="pm-value" data-i18n="notes-meta-duree">1 an</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Produit</span>
-          <span class="pm-value">ERP maison</span>
+          <span class="pm-label" data-i18n="pm-produit">Produit</span>
+          <span class="pm-value" data-i18n="notes-meta-produit">ERP maison</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Contexte</span>
+          <span class="pm-label" data-i18n="pm-contexte">Contexte</span>
           <span class="pm-value">ilem Group</span>
         </div>
       </div>
@@ -63,14 +64,14 @@
     <div class="proj-body">
 
       <section class="proj-section reveal">
-        <h2>Contexte</h2>
-        <p>
+        <h2 data-i18n="notes-s1-h">Contexte</h2>
+        <p data-i18n="notes-s1-p1">
           Alternance d'un an chez ilem Group, une ESN qui développe et maintient
           son propre ERP en interne. La mission : concevoir et intégrer un module
           dédié à la gestion des notes de frais, directement dans une base de code
           existante, volumineuse, et déjà en production.
         </p>
-        <p>
+        <p data-i18n="notes-s1-p2">
           Le travail couvrait l'ensemble du cycle : compréhension des specs,
           développement du module, intégration dans l'existant, persistance des données
           et cycle de correction jusqu'à la stabilisation.
@@ -78,26 +79,26 @@
       </section>
 
       <section class="proj-section reveal">
-        <h2>Ce qui a été développé</h2>
+        <h2 data-i18n="notes-s2-h">Ce qui a été développé</h2>
         <ul class="proj-list">
-          <li>Lecture et compréhension des spécifications fonctionnelles</li>
-          <li>Développement des composants du module avec Vaadin et Spring Boot</li>
-          <li>Modélisation et intégration côté base de données</li>
-          <li>Connexion aux entités existantes de l'ERP</li>
-          <li>Correction de bugs et stabilisation en continu</li>
+          <li data-i18n="notes-s2-li1">Lecture et compréhension des spécifications fonctionnelles</li>
+          <li data-i18n="notes-s2-li2">Développement des composants du module avec Vaadin et Spring Boot</li>
+          <li data-i18n="notes-s2-li3">Modélisation et intégration côté base de données</li>
+          <li data-i18n="notes-s2-li4">Connexion aux entités existantes de l'ERP</li>
+          <li data-i18n="notes-s2-li5">Correction de bugs et stabilisation en continu</li>
         </ul>
       </section>
 
       <section class="proj-section proj-highlight reveal">
-        <span class="highlight-label">Le vrai défi</span>
-        <h2>Entrer dans un projet existant sans se perdre</h2>
-        <p>
+        <span class="highlight-label" data-i18n="notes-hl-label">Le vrai défi</span>
+        <h2 data-i18n="notes-s3-h">Entrer dans un projet existant sans se perdre</h2>
+        <p data-i18n="notes-s3-p1">
           La difficulté principale n'était pas technique au sens strict, c'était
           de monter en compétence sur une techno nouvelle (Java, Spring Boot, Vaadin)
           tout en s'intégrant dans un ERP maison développé sur plusieurs années,
           avec ses propres conventions, son architecture et ses dépendances implicites.
         </p>
-        <p>
+        <p data-i18n="notes-s3-p2">
           Au début, chaque action demandait de remonter des chaînes de code sans
           vraiment comprendre où ça menait. Le vrai tournant, c'est le moment où
           j'ai commencé à voir les relations entre les entités de l'application :
@@ -108,15 +109,15 @@
       </section>
 
       <section class="proj-section reveal">
-        <span class="highlight-label">Ce qu'on retient</span>
-        <h2>Lire un projet avant d'écrire du code</h2>
-        <p>
+        <span class="highlight-label" data-i18n="notes-s4-label">Ce qu'on retient</span>
+        <h2 data-i18n="notes-s4-h">Lire un projet avant d'écrire du code</h2>
+        <p data-i18n="notes-s4-p1">
           Cette alternance m'a donné un réflexe que je n'avais pas avant :
           passer du temps à comprendre avant de commencer à produire.
           Sur un projet existant, écrire du code sans avoir compris l'architecture
           crée plus de problèmes qu'il n'en résout.
         </p>
-        <p>
+        <p data-i18n="notes-s4-p2">
           Savoir lire un projet, ses relations, ses patterns, ses conventions,
           c'est une compétence à part entière, aussi importante que savoir écrire
           du code propre. Et c'est celle que j'ai le plus développée cette année.
@@ -126,10 +127,10 @@
     </div>
 
     <nav class="proj-nav">
-      <a href="index.html#travaux" class="proj-nav-back">← Tous les travaux</a>
+      <a href="index.html#travaux" class="proj-nav-back" data-i18n="notes-nav-back">← Tous les travaux</a>
       <a href="projet-gainr.html" class="proj-nav-next">
-        <span class="pn-label">Projet suivant</span>
-        <span class="pn-title">Gainr →</span>
+        <span class="pn-label" data-i18n="notes-pn-label">Projet suivant</span>
+        <span class="pn-title" data-i18n="notes-pn-title">Gainr →</span>
       </a>
     </nav>
 

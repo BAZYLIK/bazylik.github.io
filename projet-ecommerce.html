@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plateforme e-commerce Laravel - Reda Rouibah</title>
+  <title data-i18n="ecom-page-title">Plateforme e-commerce Laravel - Reda Rouibah</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +16,11 @@
   <header id="header">
     <a class="logo" href="index.html">← Reda Rouibah</a>
     <nav>
-      <a href="index.html#travaux">Travaux</a>
-      <a href="index.html#parcours">Parcours</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#travaux" data-i18n="nav-travaux">Travaux</a>
+      <a href="index.html#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="index.html#contact" data-i18n="nav-contact">Contact</a>
     </nav>
+    <button id="langBtn" aria-label="Langue"></button>
     <button id="themeBtn" aria-label="Thème"></button>
   </header>
 
@@ -28,25 +29,25 @@
     <!-- HERO PROJET -->
     <section class="proj-hero">
       <div class="proj-hero-top">
-        <span class="proj-kicker">Projet universitaire · Web app</span>
+        <span class="proj-kicker" data-i18n="ecom-kicker">Projet universitaire · Web app</span>
         <span class="proj-index">04 / 05</span>
       </div>
       <h1 class="proj-title"><span>Plateforme</span><span>e-commerce Laravel</span></h1>
       <div class="proj-meta-strip">
         <div class="proj-meta-item">
-          <span class="pm-label">Rôle</span>
-          <span class="pm-value">Développeur full-stack</span>
+          <span class="pm-label" data-i18n="pm-role">Rôle</span>
+          <span class="pm-value" data-i18n="ecom-meta-role">Développeur full-stack</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Équipe</span>
-          <span class="pm-value">5 personnes</span>
+          <span class="pm-label" data-i18n="pm-equipe">Équipe</span>
+          <span class="pm-value" data-i18n="ecom-meta-equipe">5 personnes</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Durée</span>
-          <span class="pm-value">3 mois</span>
+          <span class="pm-label" data-i18n="pm-duree">Durée</span>
+          <span class="pm-value" data-i18n="ecom-meta-duree">3 mois</span>
         </div>
         <div class="proj-meta-item">
-          <span class="pm-label">Contexte</span>
+          <span class="pm-label" data-i18n="pm-contexte">Contexte</span>
           <span class="pm-value">BUT IAMSI</span>
         </div>
       </div>
@@ -67,54 +68,54 @@
     <div class="proj-body">
 
       <section class="proj-section reveal">
-        <h2>Contexte</h2>
-        <p>
+        <h2 data-i18n="ecom-s1-h">Contexte</h2>
+        <p data-i18n="ecom-s1-p1">
           Projet universitaire réalisé en équipe de cinq sur trois mois, l'objectif était de concevoir
           une solution e-commerce complète couvrant les parcours principaux d'un utilisateur :
           navigation dans le catalogue, gestion des favoris, panier et passage de commande.
         </p>
-        <p>
+        <p data-i18n="ecom-s1-p2">
           Le projet était organisé en sprints avec un backlog structuré, ce qui nous a permis
           de travailler de façon itérative et de livrer des fonctionnalités testables à chaque cycle.
         </p>
       </section>
 
       <section class="proj-section reveal">
-        <h2>Ce qu'on a construit</h2>
+        <h2 data-i18n="ecom-s2-h">Ce qu'on a construit</h2>
         <ul class="proj-list">
-          <li>Structuration des besoins et découpage fonctionnel en sprints</li>
-          <li>Développement du catalogue produit avec filtres et navigation</li>
-          <li>Système de favoris persistants par utilisateur</li>
-          <li>Logique de panier - ajout, modification de quantité, suppression</li>
-          <li>Parcours commande de bout en bout</li>
-          <li>Interface web côté utilisateur</li>
+          <li data-i18n="ecom-s2-li1">Structuration des besoins et découpage fonctionnel en sprints</li>
+          <li data-i18n="ecom-s2-li2">Développement du catalogue produit avec filtres et navigation</li>
+          <li data-i18n="ecom-s2-li3">Système de favoris persistants par utilisateur</li>
+          <li data-i18n="ecom-s2-li4">Logique de panier - ajout, modification de quantité, suppression</li>
+          <li data-i18n="ecom-s2-li5">Parcours commande de bout en bout</li>
+          <li data-i18n="ecom-s2-li6">Interface web côté utilisateur</li>
         </ul>
       </section>
 
       <section class="proj-section proj-highlight reveal">
-        <span class="highlight-label">Point technique</span>
-        <h2>La gestion du panier et des favoris</h2>
-        <p>
+        <span class="highlight-label" data-i18n="ecom-hl-label">Point technique</span>
+        <h2 data-i18n="ecom-s3-h">La gestion du panier et des favoris</h2>
+        <p data-i18n="ecom-s3-p1">
           La partie la plus exigeante du projet. Le panier devait être cohérent entre les pages,
           persistant pour un utilisateur connecté, et réactif côté interface sans alourdir
           les échanges avec le serveur. Les favoris posaient une question similaire : synchroniser
           l'état entre la vue catalogue et la vue dédiée sans introduire de bugs de cohérence.
         </p>
-        <p>
+        <p data-i18n="ecom-s3-p2">
           On a travaillé la session Laravel côté back et géré les interactions côté JS pour
           éviter les rechargements inutiles, un bon exercice d'articulation entre les deux couches.
         </p>
       </section>
 
       <section class="proj-section reveal">
-        <span class="highlight-label">Ce qu'on retient</span>
-        <h2>Une approche projet structurée</h2>
-        <p>
+        <span class="highlight-label" data-i18n="ecom-s4-label">Ce qu'on retient</span>
+        <h2 data-i18n="ecom-s4-h">Une approche projet structurée</h2>
+        <p data-i18n="ecom-s4-p1">
           Ce projet m'a appris autant sur le process que sur le code. Travailler à cinq
           sur un même codebase Laravel, avec des sprints définis et un backlog maintenu,
           a demandé une discipline de coordination qu'on n'apprend pas en faisant du code seul.
         </p>
-        <p>
+        <p data-i18n="ecom-s4-p2">
           L'organisation en sprints a rendu le projet livrable : chaque itération avait
           un périmètre clair, ce qui évitait l'effet tunnel et permettait d'ajuster la priorité
           en cours de route.
@@ -125,10 +126,10 @@
 
     <!-- NAVIGATION -->
     <nav class="proj-nav">
-      <a href="projet-powerbi.html" class="proj-nav-back">← Tableaux de bord RH</a>
+      <a href="projet-powerbi.html" class="proj-nav-back" data-i18n="ecom-nav-back">← Tableaux de bord RH</a>
       <a href="projet-odoo.html" class="proj-nav-next">
-        <span class="pn-label">Projet suivant</span>
-        <span class="pn-title">Déploiement ERP Odoo →</span>
+        <span class="pn-label" data-i18n="ecom-pn-label">Projet suivant</span>
+        <span class="pn-title" data-i18n="ecom-pn-title">Déploiement ERP Odoo →</span>
       </a>
     </nav>
 

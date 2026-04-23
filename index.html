@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reda Rouibah - Développeur</title>
+  <title data-i18n="page-title">Reda Rouibah - Développeur</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,17 +16,18 @@
   <header id="header">
     <a class="logo" href="#top">Reda Rouibah</a>
     <nav>
-      <a href="#travaux">Travaux</a>
-      <a href="#parcours">Parcours</a>
-      <a href="#contact">Contact</a>
+      <a href="#travaux" data-i18n="nav-travaux">Travaux</a>
+      <a href="#parcours" data-i18n="nav-parcours">Parcours</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
     </nav>
+    <button id="langBtn" aria-label="Langue"></button>
     <button id="themeBtn" aria-label="Thème"></button>
   </header>
 
   <!-- HERO -->
   <section id="top">
     <div class="hero-top">
-      <span class="hero-tag">Développeur · BUT Informatique IAMSI</span>
+      <span class="hero-tag" data-i18n="hero-tag-role">Développeur · BUT Informatique IAMSI</span>
       <span class="hero-tag">2026</span>
     </div>
     <div class="hero-split">
@@ -37,8 +38,8 @@
         </h1>
       </div>
       <div class="hero-right">
-        <span class="hero-badge"><span class="dot"></span>Disponible · Saint-Julien-en-Genevois</span>
-        <p class="hero-desc">
+        <span class="hero-badge"><span class="dot"></span><span data-i18n="hero-badge-text">Disponible · Saint-Julien-en-Genevois</span></span>
+        <p class="hero-desc" data-i18n="hero-desc">
           Web, intégration SI, data,<br/>
           je relie l'interface, la logique applicative<br/>et les besoins terrain.
         </p>
@@ -49,7 +50,7 @@
           <span>Laravel</span>
           <span>SQL</span>
         </div>
-        <a href="#travaux" class="hero-cta">Voir les projets ↓</a>
+        <a href="#travaux" class="hero-cta" data-i18n="hero-cta">Voir les projets ↓</a>
       </div>
     </div>
   </section>
@@ -69,22 +70,22 @@
   <!-- TRAVAUX -->
   <section id="travaux">
     <div class="section-head">
-      <span class="label">Travaux sélectionnés</span>
+      <span class="label" data-i18n="section-travaux">Travaux sélectionnés</span>
       <span class="label">(5)</span>
     </div>
 
     <a href="projet-notesdefrais.html" class="work-row">
       <div class="wr-num">01</div>
       <div class="wr-info">
-        <h2>Module ERP Notes de Frais</h2>
-        <p>Développement et intégration d'un module notes de frais dans un ERP maison, specs, back-end, données et stabilisation.</p>
+        <h2 data-i18n="work-01-title">Module ERP Notes de Frais</h2>
+        <p data-i18n="work-01-desc">Développement et intégration d'un module notes de frais dans un ERP maison, specs, back-end, données et stabilisation.</p>
       </div>
       <div class="wr-tags">
         <span>Java</span>
         <span>Spring Boot</span>
         <span>SQL</span>
       </div>
-      <div class="wr-year">Alternance</div>
+      <div class="wr-year" data-i18n="work-01-year">Alternance</div>
       <div class="wr-arrow">↗</div>
     </a>
 
@@ -92,59 +93,59 @@
       <div class="wr-num">02</div>
       <div class="wr-info">
         <h2>Gainr</h2>
-        <p>SaaS de coaching sportif, programme sur mesure par IA, suivi des perfs, du poids et de la diète.</p>
+        <p data-i18n="work-02-desc">SaaS de coaching sportif, programme sur mesure par IA, suivi des perfs, du poids et de la diète.</p>
       </div>
       <div class="wr-tags">
         <span>Next.js</span>
         <span>IA</span>
         <span>SaaS</span>
       </div>
-      <div class="wr-year">Perso</div>
+      <div class="wr-year" data-i18n="work-02-year">Perso</div>
       <div class="wr-arrow">↗</div>
     </a>
 
     <a href="projet-powerbi.html" class="work-row">
       <div class="wr-num">03</div>
       <div class="wr-info">
-        <h2>Tableaux de bord RH - Power BI</h2>
-        <p>Modélisation des données RH, rapports interactifs et indicateurs DAX pour rendre la donnée lisible et actionnable.</p>
+        <h2 data-i18n="work-03-title">Tableaux de bord RH - Power BI</h2>
+        <p data-i18n="work-03-desc">Modélisation des données RH, rapports interactifs et indicateurs DAX pour rendre la donnée lisible et actionnable.</p>
       </div>
       <div class="wr-tags">
         <span>Power BI</span>
         <span>DAX</span>
         <span>KPI</span>
       </div>
-      <div class="wr-year">Stage</div>
+      <div class="wr-year" data-i18n="work-03-year">Stage</div>
       <div class="wr-arrow">↗</div>
     </a>
 
     <a href="projet-ecommerce.html" class="work-row">
       <div class="wr-num">04</div>
       <div class="wr-info">
-        <h2>Plateforme e-commerce Laravel</h2>
-        <p>Catalogue, panier et commandes, solution complète orientée besoins fonctionnels, développée en full-stack.</p>
+        <h2 data-i18n="work-04-title">Plateforme e-commerce Laravel</h2>
+        <p data-i18n="work-04-desc">Catalogue, panier et commandes, solution complète orientée besoins fonctionnels, développée en full-stack.</p>
       </div>
       <div class="wr-tags">
         <span>Laravel</span>
         <span>PHP</span>
         <span>HTML/CSS/JS</span>
       </div>
-      <div class="wr-year">Projet univ.</div>
+      <div class="wr-year" data-i18n="work-04-year">Projet univ.</div>
       <div class="wr-arrow">↗</div>
     </a>
 
     <a href="projet-odoo.html" class="work-row">
       <div class="wr-num">05</div>
       <div class="wr-info">
-        <h2>Déploiement ERP Odoo - Restauration</h2>
-        <p>Configuration et adaptation d'un ERP pour un restaurant, stock, commandes et besoins métier traduits en modules.</p>
+        <h2 data-i18n="work-05-title">Déploiement ERP Odoo - Restauration</h2>
+        <p data-i18n="work-05-desc">Configuration et adaptation d'un ERP pour un restaurant, stock, commandes et besoins métier traduits en modules.</p>
       </div>
       <div class="wr-tags">
         <span>Odoo</span>
         <span>ERP</span>
         <span>Intégration SI</span>
       </div>
-      <div class="wr-year">Projet univ.</div>
+      <div class="wr-year" data-i18n="work-05-year">Projet univ.</div>
       <div class="wr-arrow">↗</div>
     </a>
 
@@ -153,44 +154,44 @@
   <!-- PARCOURS -->
   <section id="parcours">
     <div class="section-head">
-      <span class="label">Parcours</span>
+      <span class="label" data-i18n="section-parcours">Parcours</span>
     </div>
     <div class="parcours-grid">
 
       <div class="p-item reveal">
         <span class="p-date">2023</span>
         <div class="p-body">
-          <h3>Bac Technologique - STI2D</h3>
-          <p>Lycée Louis Lachenal. Spécialité Systèmes d'Information et Numérique. Sciences et technologies de l'industrie et du développement durable.</p>
+          <h3 data-i18n="parcours-01-title">Bac Technologique - STI2D</h3>
+          <p data-i18n="parcours-01-desc">Lycée Louis Lachenal. Spécialité Systèmes d'Information et Numérique. Sciences et technologies de l'industrie et du développement durable.</p>
         </div>
-        <span class="p-type">Formation</span>
+        <span class="p-type" data-i18n="parcours-01-type">Formation</span>
       </div>
 
       <div class="p-item reveal">
         <span class="p-date">2023 - 2026</span>
         <div class="p-body">
-          <h3>BUT Informatique - IAMSI</h3>
-          <p>IUT d'Annecy. 3ème année, parcours D. Formation entre développement, intégration applicative et compréhension du SI, avec un ancrage concret dans les projets réalisés.</p>
+          <h3 data-i18n="parcours-02-title">BUT Informatique - IAMSI</h3>
+          <p data-i18n="parcours-02-desc">IUT d'Annecy. 3ème année, parcours D. Formation entre développement, intégration applicative et compréhension du SI, avec un ancrage concret dans les projets réalisés.</p>
         </div>
-        <span class="p-type">Formation</span>
+        <span class="p-type" data-i18n="parcours-02-type">Formation</span>
       </div>
 
       <div class="p-item reveal">
         <span class="p-date">Avril - Juin 2025</span>
         <div class="p-body">
-          <h3>ilem Group - Stage · Data & BI</h3>
-          <p>Modélisation de données, création de rapports interactifs et construction d'indicateurs RH avec DAX sous Power BI.</p>
+          <h3 data-i18n="parcours-03-title">ilem Group - Stage · Data & BI</h3>
+          <p data-i18n="parcours-03-desc">Modélisation de données, création de rapports interactifs et construction d'indicateurs RH avec DAX sous Power BI.</p>
         </div>
-        <span class="p-type">Stage</span>
+        <span class="p-type" data-i18n="parcours-03-type">Stage</span>
       </div>
 
       <div class="p-item reveal">
         <span class="p-date">Sept. 2025 - Sept. 2026</span>
         <div class="p-body">
-          <h3>ilem Group - Alternance · Développement SI</h3>
-          <p>Développement et intégration d'un module ERP Notes de Frais, specs, base de données, back-end et cycle de fiabilisation.</p>
+          <h3 data-i18n="parcours-04-title">ilem Group - Alternance · Développement SI</h3>
+          <p data-i18n="parcours-04-desc">Développement et intégration d'un module ERP Notes de Frais, specs, base de données, back-end et cycle de fiabilisation.</p>
         </div>
-        <span class="p-type">Alternance</span>
+        <span class="p-type" data-i18n="parcours-04-type">Alternance</span>
       </div>
 
     </div>
@@ -199,8 +200,8 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner reveal">
-      <p class="contact-pre">Parlons-en.</p>
-      <h2 class="contact-big">Disponible<br/>pour un poste.</h2>
+      <p class="contact-pre" data-i18n="contact-pre">Parlons-en.</p>
+      <h2 class="contact-big" data-i18n="contact-big">Disponible<br/>pour un poste.</h2>
       <div class="contact-links">
         <a href="mailto:rouibah.reda@gmail.com">rouibah.reda@gmail.com ↗</a>
         <a href="https://www.linkedin.com/in/r%C3%A9da-rouibah-537b8b2a1/" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -209,7 +210,7 @@
     </div>
     <footer>
       <span>© 2026 Reda Rouibah</span>
-      <span>BUT Informatique IAMSI · Saint-Julien-en-Genevois</span>
+      <span data-i18n="footer-sub">BUT Informatique IAMSI · Saint-Julien-en-Genevois</span>
     </footer>
   </section>
 
