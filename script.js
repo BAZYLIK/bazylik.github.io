@@ -1,4 +1,4 @@
-// Theme — light by default
+// Theme - light by default
 const html = document.documentElement;
 const btn = document.getElementById('themeBtn');
 const saved = localStorage.getItem('theme') || 'light';

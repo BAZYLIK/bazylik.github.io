@@ -1,4 +1,4 @@
-/* ===== PAGE PROJET — styles spécifiques ===== */
+/* ===== PAGE PROJET - styles spécifiques ===== */
 
 /* Hero projet */
 .proj-hero {
@@ -176,7 +176,7 @@
 }
 
 .proj-list li::before {
-  content: '—';
+  content: '-';
   position: absolute;
   left: 0;
   color: var(--faint);
